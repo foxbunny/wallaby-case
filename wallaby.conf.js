@@ -1,4 +1,4 @@
-module.exports = () => ({
+module.exports = (wallaby) => ({
   files: [
     "tsconfig.json",
     "package.json",
@@ -12,6 +12,16 @@ module.exports = () => ({
   ],
   env: {
     type: "node",
+  },
+  compilers: {
+    '**/*.ts?(x)': wallaby.compilers.typeScript({
+      module: 'es2015'
+    })
+  },
+  preprocessors: {
+    '**/*.js?(x)': file => require('babel-core').transform(
+      file.content,
+      {sourceMap: true, plugins: ['transform-es2015-modules-commonjs']})
   },
   testFramework: "jest",
   debug: true,
