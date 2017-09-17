@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index Should render Hello world without an exception 1`] = `
+<div
+  class="Index"
+>
+  Hello, Wallaby
+</div>
+`;
