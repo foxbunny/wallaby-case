@@ -15,6 +15,7 @@
     "@types/jest": "^19.2.3",
     "@types/node": "8.0.26",
     "@types/webpack-env": "^1.13.0",
+    "@types/whatwg-fetch": "0.0.33",
     "autoprefixer": "^6.7.7",
     "bundle-loader": "^0.5.5",
     "copy-webpack-plugin": "^4.0.1",
@@ -52,7 +53,8 @@
     "es6-promise": "^4.1.1",
     "es6-shim": "^0.35.3",
     "vue": "^2.3.3",
-    "vuex-class": "^0.2.0"
+    "vuex-class": "^0.2.0",
+    "whatwg-fetch": "^2.0.3"
   },
   "jest": {
     "transform": {
