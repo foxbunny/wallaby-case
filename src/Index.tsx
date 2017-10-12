@@ -1,6 +1,6 @@
 const style = require<CSSModule>("./ErrorMessage.scss");
 
-import Vue from "vue";
+import * as Vue from "vue";
 import {Component} from "vue-property-decorator";
 import {CreateElement} from "vue/types";
 import {VNode} from "vue/types/vnode";
